@@ -1,20 +1,24 @@
 <?php 
 
-// Define a class
-
-Class Users{
-	public $name = 'John'; // Properties (attribute)
+class Users{
+	public $name;
 	public $age;
 
+	public function __construct($name, $age){
+		echo 'Class ' .__CLASS__. ' is instantiated <br>';
+		$this->name = $name;
+		$this->age = $age;
+	}
 
-	// Mathod (function)
 
-	public function sayHello(){
-		return $this->name . ' says hello';
+	public function __destruct(){
+		echo 'Class ' .__CLASS__. 'has destroyed';
 	}
 }
 
-// Instantiate a user object form Users class
 
-$user = new Users();
-echo $user->sayHello();
+$user = new Users('john', 25);
+echo $user->name . ' is ' .$user->age .' years old <br>';
+
+
+
