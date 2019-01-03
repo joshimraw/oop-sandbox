@@ -17,10 +17,10 @@ class Users extends Controller{
 				'password'		=> trim($_POST['password']),
 				'confm_pass'	=> trim($_POST['confm_pass']),
 
-				'name_err'		=> '',
-				'email_err'		=> '',
-				'password_err'	=> '',
-				'confm_pass_err' => ''
+				'name_err'			=> '',
+				'email_err'			=> '',
+				'password_err'		=> '',
+				'confm_pass_err' 	=> ''
 
 			];
 

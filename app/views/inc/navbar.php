@@ -18,6 +18,10 @@
       <?php if(isset($_SESSION['user_id'])) : ?>
 
           <li class="nav-item">
+            <a class="nav-link" href="#"><?php echo " Welcome ". $_SESSION['user_name']. " &hearts;"; ?></a>
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo URLROOT; ?>/users/logout">Logout</a>
           </li>
 
